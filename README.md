@@ -1,4 +1,4 @@
-# ☕ CAFE
+# ☕ CAFE™
 Custom Automation Framework Experiment™.
 
 This project encapsulates the best practices I've learned and used for Test Automation along the years.
