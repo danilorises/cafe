@@ -7,7 +7,9 @@ from selenium.webdriver.support import expected_conditions
 
 def test_login_ok():
     # Open the App
-    driver = webdriver.Chrome()
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument('headless')
+    driver = webdriver.Chrome(options=chrome_options)
     driver.get('https://www.saucedemo.com/')
 
     # Get username and password from page
@@ -35,7 +37,9 @@ def test_login_ok():
 
 def test_login_wrong_credentials():
     # Open the App
-    driver = webdriver.Chrome()
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument('headless')
+    driver = webdriver.Chrome(options=chrome_options)
     driver.get('https://www.saucedemo.com/')
 
     # Fill wrong credentials and click on Login
@@ -47,7 +51,9 @@ def test_login_wrong_credentials():
 
 def test_login_empty_username():
     # Open the App
-    driver = webdriver.Chrome()
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument('headless')
+    driver = webdriver.Chrome(options=chrome_options)
     driver.get('https://www.saucedemo.com/')
 
     # Get password from page
@@ -61,7 +67,9 @@ def test_login_empty_username():
 
 def test_login_empty_password():
     # Open the App
-    driver = webdriver.Chrome()
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument('headless')
+    driver = webdriver.Chrome(options=chrome_options)
     driver.get('https://www.saucedemo.com/')
 
     # Get username from page
@@ -75,7 +83,9 @@ def test_login_empty_password():
 
 def test_login_blocked_user():
     # Open the App
-    driver = webdriver.Chrome()
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument('headless')
+    driver = webdriver.Chrome(options=chrome_options)
     driver.get('https://www.saucedemo.com/')
 
     # Get username and password from page
