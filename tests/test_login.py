@@ -10,7 +10,7 @@ def test_login_ok():
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('headless')
     driver = webdriver.Chrome(options=chrome_options)
-    driver.get('https://www.saucdemo.com/')
+    driver.get('https://www.saucedemo.com/')
 
     # Get username and password from page
     username = driver.find_element(By.ID,'login_credentials').text.split('\n')[1]
