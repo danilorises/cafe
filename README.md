@@ -21,12 +21,12 @@ sh run_tests.sh
 
 ## STRUCTURE
 
-**/data:** Every object used on test, mapped
+**/data:** Data
 
-**/pages:** All the reports generated
+**/pages:** The pages/objects that the application contains
 
-**/reports:** All the tests of the suite
+**/reports:** The reports generated
 
-**/tests:** All the reports generated
+**/tests:** the tests of the suite
 
-**/utils:** All the tests of the suite
+**/utils:** Functions used frequently
